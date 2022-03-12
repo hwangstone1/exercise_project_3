@@ -18,4 +18,4 @@ class Answer(models.Model):
 
     answer = models.ForeignKey(Question, on_delete=models.CASCADE)
     content = models.TextField()
-    create_data = models.DateTimeField()
+    create_date = models.DateTimeField()
