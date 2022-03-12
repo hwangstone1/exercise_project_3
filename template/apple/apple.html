@@ -1,22 +1,39 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-</head>
-<body>
-    <div>
-        <ul>
-            <li>
-                <a href="#"> the page is main page in site</a>
-            </li>
-        </ul>
+{% extends 'base.html' %}
+{% block content %}
 
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem background-color:#9F81F7;">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTlfMTgx%2FMDAxNjQyNTU3NTI1NTQ5.62eabBCD56GtkE74h0Fyv0lMOF3wtjpr6NBKKHwsDe8g.r6S-84lFTxttYn82WEE1onKuZe8TOentbjRuX_0fh-sg.JPEG.solejy%2F1642557519475.jpg&type=a340" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="my-box">
-        <a href="#">dsadas</a>
-    </div>
-</body>
-</html>
+</div>
+{% endblock %}

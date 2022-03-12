@@ -1,15 +1,18 @@
-{% load static %}
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'style' %}">
-</head>
+{% extends 'base.html' %}
+
 <body>
+{% block content %}
 {% if question_list %}
-    <ul>
+<ul>
     {% for question in question_list %}
+
         <li><a href="{% url 'board:detail' question.id %}">{{ question.subject }}</a></li>
+
     {% endfor %}
-    </ul>
+</ul>
 {% else %}
-    <p>질문이 없습니다.</p>
+<p>질문이 없습니다.</p>
 {% endif %}
+
+{% endblock %}
 </body>

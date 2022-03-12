@@ -1,19 +1,9 @@
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-.body
-{
-  min-height: 100vh;
-  overflow-x: hidden;
-  text-align: center;
-
-}
 
 .my-box
 {
  border:1px solid; padding:10px;
+}
+
+input[type=submit]{
+    margin-top:10px;
 }
