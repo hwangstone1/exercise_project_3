@@ -3,13 +3,18 @@
 <body>
 {% block content %}
 {% if question_list %}
-<ul>
+
+
+<div>
     {% for question in question_list %}
 
-        <li><a href="{% url 'board:detail' question.id %}">{{ question.subject }}</a></li>
+    <ul class="border border-secondary">
+        <a href="{% url 'board:detail' question.id %}">{{ question.subject }}</a>
+     </ul>
 
     {% endfor %}
-</ul>
+</div>
+
 {% else %}
 <p>질문이 없습니다.</p>
 {% endif %}
