@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include('apple.urls')),
     path('board/', include('board.urls')),
     path('search/', include('search.urls')),
+    path('common/', include('common.urls')),
+
 ]

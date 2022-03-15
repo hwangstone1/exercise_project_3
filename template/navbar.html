@@ -27,6 +27,9 @@
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'common:login' %}">로그인</a>
+      </li>
       <form class="d-flex" action="{% url 'search:searchResult' %}" method="get">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="kw">
         <button class="btn btn-outline-success" type="submit">Search</button>
