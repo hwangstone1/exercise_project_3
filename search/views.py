@@ -10,6 +10,6 @@ def searchResult(requset):
         items = Question.objects.all().filter(
             Q(subject__icontains=query) |
             Q(content__icontains=query)
-        )
+        ).distinct()
 
     return render(requset, 'search.html', {'query':query, 'result':items})
