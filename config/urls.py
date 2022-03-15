@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apple.urls')),
     path('board/', include('board.urls')),
+    path('search/', include('search.urls')),
 ]

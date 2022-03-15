@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>검색결과 출력 - 검색어 : <b>" {{query}} "</b></h3>
+<h3>총 : <b>{{ count.query }}</b>이 검색</h3>
+    {% if result %}
+        {% for item in result %}
+            <div>
+                <p>{{ item.subject }}</p>
+                <p>{{ item.content }}</p>
+
+            </div>
+        {% endfor %}
+
+    {% else %}
+
+            <div>
+                <p> 검색결과가 없습니다 .</p>
+            </div>
+    {% endif %}
+
+{% endblock %}
